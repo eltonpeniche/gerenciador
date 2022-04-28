@@ -16,8 +16,6 @@
 			EMPRESA ${ empresa } CADASTRADA COM SUCESSO
 		</c:if>
 		
-		<br>
-		<a href="/gerenciador/formNovaEmpresa.jsp"> NOVA EMPRESA </a>
 		<h1>EMPRESAS CADASTRADAS</h1>
 		<br>
 		<ul> 
@@ -31,6 +29,7 @@
 				</li>
 			</c:forEach>
 		</ul>
-		
+		<br>
+		<a href="/gerenciador/entrada?acao=formNovaEmpresa"> NOVA EMPRESA </a>
 	</body>
 </html>

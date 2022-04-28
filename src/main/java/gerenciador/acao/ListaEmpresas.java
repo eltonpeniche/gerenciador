@@ -13,7 +13,7 @@ import gerenciador.modelo.Empresa;
 
 public class ListaEmpresas {
 	
-	public void executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public String executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		System.out.println("CLASSE LISTANDO EMPRESA");
 		Banco banco = new Banco();
@@ -21,9 +21,11 @@ public class ListaEmpresas {
 		
 		//chamar JPS
 		
-		RequestDispatcher rd = request.getRequestDispatcher("/listaEmpresas.jsp");
+		
 		request.setAttribute("empresas", lista);
-		rd.forward(request, response);
+		
+		return "forward:/listaEmpresas.jsp";
+				
 	}
 
 }

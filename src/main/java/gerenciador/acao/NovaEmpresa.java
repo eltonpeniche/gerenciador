@@ -14,7 +14,7 @@ import gerenciador.modelo.Banco;
 import gerenciador.modelo.Empresa;
 
 public class NovaEmpresa {
-	public void executa(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+	public String executa(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		
 		System.out.println("CADASTRANDO NOVA EMPRESA");
 		String nomeEmpresa = request.getParameter("nome");
@@ -42,16 +42,9 @@ public class NovaEmpresa {
 		
 		request.setAttribute("empresa", empresa.getNome());
 		
-		response.sendRedirect("entrada?acao=listaEmpresas");
-		
-		
-		//chamar JPS
-		
-//		RequestDispatcher rd = request.getRequestDispatcher("/listaEmpresas");
-//		request.setAttribute("empresa", empresa.getNome());
-//		rd.forward(request, response);
-
-		
+		//response.sendRedirect("entrada?acao=listaEmpresas");
+		return "redirect:entrada?acao=listaEmpresas";
+				
 		
 	}
 

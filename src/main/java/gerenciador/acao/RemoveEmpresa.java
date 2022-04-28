@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import gerenciador.modelo.Banco;
 
 public class RemoveEmpresa {
-	public void executa(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	public String executa(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
 		System.out.println("1Removendo EMPRESA");
 		
@@ -19,7 +19,9 @@ public class RemoveEmpresa {
 		out.println("ID EMPRESA= "+ idEmpresa);
 		Banco.remove(idEmpresa);
 		
-		response.sendRedirect("entrada?acao=listaEmpresas");
+		//response.sendRedirect("entrada?acao=listaEmpresas");
+		
+		return "redirect:entrada?acao=listaEmpresas";
 		
 		
 	}
