@@ -6,15 +6,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>LOGIN</title>
 </head>
 <body>
 	<form action="${linkServetNovaEmpresa}" method = "post">
-	<h2>CADASTRANDO NOVA EMPRESA</h2>
-	Nome: <input type="text" name= "nome" autofocus>
-	Data de Abertura: <input type="text" name= "data">
-	<input type="hidden" name= "acao" value="NovaEmpresa">
-  	<input type="submit" value="Submit">
+	<h2>Login</h2>
+	Login: <input type="text" name= "login" autofocus>
+	senha: <input type="password" name= "senha">
+	<input type="hidden" name= "acao" value="Login">
+  	<input type="submit" value="Enviar">
 	
 	
 	</form>

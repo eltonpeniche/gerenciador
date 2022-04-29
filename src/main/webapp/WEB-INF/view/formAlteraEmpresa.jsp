@@ -10,9 +10,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 	<form action="${linkServetEditaEmpresa}" method = "post">
 	
-	Nome: <input type="text" name= "nome" value="${empresa.nome}">
+	Nome: <input type="text" name= "nome" value="${empresa.nome}" autofocus>
 	Data de Abertura: <input type="text" name= "data" value="<fmt:formatDate value="${ empresa.dataAbertura }" pattern="dd/MM/yyyy"/>">
   	
   	<input type="hidden" name="id" value="${empresa.id}" >

@@ -11,12 +11,14 @@
 <title>Insert title here</title>
 </head>
 	<body>
-
+	<h2>Usuário Logado: ${usuarioLogado.login}</h2>
+	<a href="entrada?acao=Logout">Sair</a>
 		<c:if test = "${not empty empresa }">
 			EMPRESA ${ empresa } CADASTRADA COM SUCESSO
 		</c:if>
 		
 		<h1>EMPRESAS CADASTRADAS</h1>
+		<a href="/gerenciador/entrada?acao=FormNovaEmpresa"> NOVA EMPRESA </a>
 		<br>
 		<ul> 
 			<c:forEach items = "${ empresas }" var= "empresa"> 
@@ -30,6 +32,6 @@
 			</c:forEach>
 		</ul>
 		<br>
-		<a href="/gerenciador/entrada?acao=FormNovaEmpresa"> NOVA EMPRESA </a>
+		
 	</body>
 </html>
