@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import gerenciador.modelo.Banco;
 import gerenciador.modelo.Empresa;
 
-public class NovaEmpresa {
+public class NovaEmpresa implements Acao {
 	public String executa(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		
 		System.out.println("CADASTRANDO NOVA EMPRESA");
@@ -43,7 +43,7 @@ public class NovaEmpresa {
 		request.setAttribute("empresa", empresa.getNome());
 		
 		//response.sendRedirect("entrada?acao=listaEmpresas");
-		return "redirect:entrada?acao=listaEmpresas";
+		return "redirect:entrada?acao=ListaEmpresas";
 				
 		
 	}

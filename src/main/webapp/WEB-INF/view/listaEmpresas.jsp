@@ -23,13 +23,13 @@
 				
 				<li> 
 					${empresa.id}: ${empresa.nome} - <fmt:formatDate value="${ empresa.dataAbertura }" pattern="dd/MM/yyyy"/>
-					<a href="/gerenciador/entrada?acao=removeEmpresa&id=${empresa.id}"> Remove </a>
-					<a href="/gerenciador/entrada?acao=mostraEmpresa&id=${empresa.id}"> Editar </a>
+					<a href="/gerenciador/entrada?acao=RemoveEmpresa&id=${empresa.id}"> Remove </a>
+					<a href="/gerenciador/entrada?acao=MostraEmpresa&id=${empresa.id}"> Editar </a>
 				
 				</li>
 			</c:forEach>
 		</ul>
 		<br>
-		<a href="/gerenciador/entrada?acao=formNovaEmpresa"> NOVA EMPRESA </a>
+		<a href="/gerenciador/entrada?acao=FormNovaEmpresa"> NOVA EMPRESA </a>
 	</body>
 </html>

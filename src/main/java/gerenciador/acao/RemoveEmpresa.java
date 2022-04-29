@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import gerenciador.modelo.Banco;
 
-public class RemoveEmpresa {
+public class RemoveEmpresa implements Acao {
 	public String executa(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
 		System.out.println("1Removendo EMPRESA");
@@ -21,7 +21,7 @@ public class RemoveEmpresa {
 		
 		//response.sendRedirect("entrada?acao=listaEmpresas");
 		
-		return "redirect:entrada?acao=listaEmpresas";
+		return "redirect:entrada?acao=ListaEmpresas";
 		
 		
 	}

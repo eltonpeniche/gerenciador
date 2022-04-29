@@ -13,7 +13,7 @@
 	<h2>CADASTRANDO NOVA EMPRESA</h2>
 	Nome: <input type="text" name= "nome">
 	Data de Abertura: <input type="text" name= "data">
-	<input type="hidden" name= "acao" value="novaEmpresa">
+	<input type="hidden" name= "acao" value="NovaEmpresa">
   	<input type="submit" value="Submit">
 	
 	

@@ -16,7 +16,7 @@
 	Data de Abertura: <input type="text" name= "data" value="<fmt:formatDate value="${ empresa.dataAbertura }" pattern="dd/MM/yyyy"/>">
   	
   	<input type="hidden" name="id" value="${empresa.id}" >
-  	<input type="hidden" name="acao" value="editaEmpresa" >
+  	<input type="hidden" name="acao" value="EditaEmpresa" >
   	<input type="submit" value="Submit">
 	
 	

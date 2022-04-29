@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import gerenciador.modelo.Banco;
 import gerenciador.modelo.Empresa;
 
-public class FormNovaEmpresa {
+public class FormNovaEmpresa implements Acao {
 	public String executa(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		
 		return "forward:formNovaEmpresa.jsp";
