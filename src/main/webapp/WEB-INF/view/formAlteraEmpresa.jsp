@@ -10,7 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<c:import url="loginLogoutParcial.jsp"/>
 	<form action="${linkServetEditaEmpresa}" method = "post">
 	
 	Nome: <input type="text" name= "nome" value="${empresa.nome}" autofocus>

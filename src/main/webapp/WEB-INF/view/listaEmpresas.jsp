@@ -11,8 +11,8 @@
 <title>Insert title here</title>
 </head>
 	<body>
-	<h2>Usuário Logado: ${usuarioLogado.login}</h2>
-	<a href="entrada?acao=Logout">Sair</a>
+	<c:import url="loginLogoutParcial.jsp"/>
+	
 		<c:if test = "${not empty empresa }">
 			EMPRESA ${ empresa } CADASTRADA COM SUCESSO
 		</c:if>
